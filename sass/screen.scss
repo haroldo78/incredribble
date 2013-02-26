@@ -1,0 +1,36 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+body {
+//    background-image: url('../images/wild_oliva.png');
+}
+
+.container {
+  @include container;
+//  @include susy-grid-background;
+}
+
+#shots {
+
+}
+
+.shot {
+    @include span-columns(3,12);
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    img {
+        @include border-radius(3px);
+    }
+}
+
+#spinner {
+    display: none;
+}
